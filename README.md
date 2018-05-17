@@ -27,3 +27,41 @@
 - Soporte para Cámaras
 
 [https://android-developers.googleblog.com/2017/10/video-playback-with-google-assistant-on.html](https://android-developers.googleblog.com/2017/10/video-playback-with-google-assistant-on.html)
+
+## What’s new in Wear OS by Google
+
+- Ya son 4 años desde que se lanzó
+- 50 relojes disponibles actualmente
+- 1 de 3 usuarios usan un teléfono iOS, esa es la razón porque se cambió el nombre de Android Wear a Wear OS by Google
+- En focado en 3 áreas: Connection, Health and Fitness, Google Assistant
+- Nueva Companion App para iOS
+- Mejoras en la optimización de la batería
+- 11 lanzamientos desde junio 2017 y 49 nuevas funciones agregadas
+- App Compat con mejoras para Wear OS g.co/dev/appcompat
+- Un reloj tiene un 10% de la batería de un celular
+- Mejoras en el consumo de la batería en Android P, Jobs and Alarms que sólo pueden funcionar cuando están en Foreground, saver mode para relojes, Dark UI System theme de #232E33 a #000000
+- Como consejo juntar las network request y sensor request para mejorar el consumo de la batería
+- Ahora soporta Kotlin, SDL
+- Se vienen más actualizaciones durante el año
+
+### Connection
+- Podemos utilizar el reloj sin necesidad de tener el teléfono a mano
+- Adaptive Text Sizing
+- Darker background
+- Complications
+- Notification Complication
+- Recently Launch App Complication
+
+### Health and Fitness
+- Trackear de mejor manera nuestra actividad
+- Touch lock para bloquear en encendido de la pantalla al tocarla, se desactiva con el botón
+- Music
+- Continua lectura de Heart rate
+
+### Assistant
+- Always present microphone?
+- Text to Speech, se puede escuchar una respuesta en un parlante bluetooth conectado al celular
+- Sugerencias para la conversación
+- La mayoría de las funciones de Google Assistant funcionan en Wear OS
+- Vocal responses?
+
