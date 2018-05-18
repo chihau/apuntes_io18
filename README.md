@@ -65,3 +65,9 @@
 - La mayoría de las funciones de Google Assistant funcionan en Wear OS
 - Vocal responses?
 
+## Android fireside chat
+
+- Android aún soporta tablets, pero se está apostando por incentivar ChromeOS, además las apps Android se pueden correr en ChromeOS
+- Seguirán invirtiendo esfuerzos en soporta Java y C++
+- 28 de las 100 tops apps usan kotlin, el 35% de los devs usan kotlin
+- La versión P beta AOSP es visualmente distinta a la Pixel
