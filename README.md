@@ -71,3 +71,15 @@
 - Seguirán invirtiendo esfuerzos en soporta Java y C++
 - 28 de las 100 tops apps usan kotlin, el 35% de los devs usan kotlin
 - La versión P beta AOSP es visualmente distinta a la Pixel
+
+## The future of computing: a conversation with John Hennesy
+
+- En los últimos años no se está logrando cumplir la ley de Moore
+- Mientras más chicos son los procesadores más están consumiendo energía, por lo que este último se está volviendo el factor límite
+- La Eficiencia Energética es la nueva métrica
+- Google Assistant por ejemplo necesita que el CPU está funcionando todo el tiempo
+- En datacenter el costo de los servidores es casi el mismo que el de la energía necesaria para hacerlos funcionar
+- En los últimos años el rendimiento de los procesadores ha crecido casi nada (3% por año)
+- Domain Specific Architectures (DSA), HW específico para hacer cierta tarea
+- Google Duplex en el ámbito de la reserva de una cita pasó el test de Turing
+- El gobierno de USA ha sido pieza clave para la innovación, por ejemplo la inteligencia artificial la ha desarrollado durante más de 50 años
