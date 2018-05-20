@@ -83,3 +83,41 @@
 - Domain Specific Architectures (DSA), HW específico para hacer cierta tarea
 - Google Duplex en el ámbito de la reserva de una cita pasó el test de Turing
 - El gobierno de USA ha sido pieza clave para la innovación, por ejemplo la inteligencia artificial la ha desarrollado durante más de 50 años
+
+## What’s new in Android
+
+- Android App Bundles
+- Android JetPack: un conjunto de bibliotecas para ayudarte a desarrollar aplicaciones Android
+- Todas las bibliotecas tipo android.support.v\*.\* ahora serán llamadas androidx.\*
+- Android Test ahora soporta clases Kotlin, reduce el boilerplate code y mejora la lectura del código
+- JetPack Architecture: Lifecycles, ViewModel, Room, LiveData
+- WorkManager es una alternativa nueva a JobSchedule
+- Batería: App Standby Buckets, Background restrictions
+- Background Input & privacy, ya no se puede acceder al micrófono, cámara y otros sensores en background, antiguamente las apps maliciosas intentaban mantenerse en memoria reproducción un leve sonido o escuchando a través del micrófono
+- Kotlin: muchas mejoras de rendimiento, ART, D8 & R8, support library y libcore, mejoras en nullability anotation, android-ktx
+- Nuevo framework para hacer Mocks
+- Desplegar texto en la UI es una de las tareas más “caras” y se puede convertir en un problema de rendimiento
+- El 80 o 90% de las operaciones que se realizan en el UI Thread para desplegar texto ocurren en el Text Measurement, se puede hacer un precómputo utilizando la Text API que utilizar un Thread independiente para hacer el trabajo. PrecomputedText.create()
+- Un magnificador del texto para ayudar a la selección de texto
+- Smart Linkify
+- Nuevo paquete android.net.wifi.rtt.\* WiFi Round-Trip-Time APIs para posicionamiento indoor de tu dispositivo, no se necesita estar conectado al API, se necesita HW compatible
+- Mejoras en Accesibilidad
+- Seguridad: BiometricDialog unificado, FingerprintManager obsoleto, Build.SERIAL ya no se usa
+- Enterprise: Ahora se puede hacer un switch entre perfil personal y trabajo para mostrar las apps por separado
+- Mejoras en el modo Kiosk
+- Soporte para Display Cutout, para soportar los “notch” (o multiples nothes)
+- Slices: es una nueva forma de desplegar contenido que pertenece a otra app, es contenido estructurado y con templates flexibles, interactivo, actualizable, y soporta content URI y se puede implementar desde kitkat con la Support Library
+- Actions: son Intents visibles a través de un botón (chips) se definen las acciones en actions.xml, se puede registrar en App Indexing para que aparezcan en los resultados de las búsquedas.
+- Notificaciones: mejoras en la forma de mostrar los mensajes, soporta Smart Reply UI
+- Desde Agosto 2018, las apps que se publiquen en Google Play deberán tener el Target API en 26
+- Desde Noviembre 2018, las actualizaciones que se publiquen en Google Play deben tener el Target API en 26
+- Desde Agosto de 2019, Si tienes apps con NDK, requerirán que soporte 64-bit ABI (32-bit será opcional)
+- NDK, versión r17, soporta Neural Networks API, JNI Shared Memory API, elimina soporte para ARMv5, MIPS y MIPS64 y otras cosas nuevas…, la versión r18 eliminará GCC, soporte para simpleperf profiler
+- Cámara: soporte para cámaras USB, soportará multiples cámaras
+- ImageDecoder: reemplazo del BitmapFactory
+- Media: soporte para HDR VP9, HDR rendering para HW compatible, soporte para formato HEIF
+- Vulkan 1.1, low level graphics API
+- Neural Networks API 1.1, C API diseñada para ML
+- ARCore, soporta AR desde el Emulator (genera una escena Virtual)
+- Sceneform: Herramienta para hacer rendering del escenario utilizado para ARCore
+- ChromeOS: puedes correr Android Studio y apps Linux
