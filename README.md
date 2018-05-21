@@ -121,3 +121,21 @@
 - ARCore, soporta AR desde el Emulator (genera una escena Virtual)
 - Sceneform: Herramienta para hacer rendering del escenario utilizado para ARCore
 - ChromeOS: puedes correr Android Studio y apps Linux
+
+## Customize Material Components for your product
+
+- Material Design se lanzó el año 2014
+- Ganadores de Material Design Awards: NYTimes 2015, Airbnb 2016, Blinkist 2017
+- Material Theme Editor herramienta para utilizar en conjunto con Sketch
+- Material Palete Generator para crear mi paleta de color
+- Permite seleccionar la tipografía
+- Nuevos íconos
+- Gallery a una herramienta para trabajar un diseño en conjunto con otros diseñadores
+- Crane es una travel app de ejemplo
+- MDC son bibliotecas open source para implementar material design en Android, iOS, Flutter y Web
+- Reply app de correo de ejemplo para Android
+- Nueva Bottom App Bar (la barra superior de acciones pasa para abajo)
+- Chips
+- Tipografía nueva Work Sans
+- Shrine es una app de compras de ejemplo
+- Una app debería tener al menos 3 capas, la navegación debería ser a través de tabs
