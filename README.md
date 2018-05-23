@@ -153,3 +153,18 @@
 - fonts.google.com sitio complementario para las fuentes
 - Material Palette generator para implementar la paleta de colores que tendrá mi app
 - Tools: Gallery para compartir diseños con mi equipo, Icons, Color Tool, Material Theme Editor es un plugin para Sketch
+
+### Material Theme Editor
+
+- io18_lib.sketch
+- Motions, Colors, Layers and Shapes
+- Utiliza la fuente Google Sans
+- gallery.io para diseño colaborativo con el equipo
+
+### Material Components
+
+- También lo utiliza Google en sus propias apps
+- En Android viene con Android Design Support Library
+- En Web se instala un módulo node a través de npm
+- En Flutter viene incluído por defecto
+- En iOS se incluye en CocoPods
