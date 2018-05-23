@@ -44,7 +44,7 @@
 - Ahora soporta Kotlin, SDL
 - Se vienen más actualizaciones durante el año
 
-### Connection
+### Connection
 - Podemos utilizar el reloj sin necesidad de tener el teléfono a mano
 - Adaptive Text Sizing
 - Darker background
