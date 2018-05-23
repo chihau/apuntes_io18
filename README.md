@@ -139,3 +139,17 @@
 - Tipografía nueva Work Sans
 - Shrine es una app de compras de ejemplo
 - Una app debería tener al menos 3 capas, la navegación debería ser a través de tabs
+
+## Building Material Design Across Platforms
+
+- Material es un sistema de diseño adaptable, respaldado por código open source, que ayuda a los equipos a desarrollar de forma sencilla experiencias digitales de alta calidad
+- En 2014 había 0 apps con MD, ahora hay 1.5 millones de apps
+- Nuevo sitio Materio.io, dividido en 3 secciones: Design, Develop y Tools
+- Material Components, bibliotecas opensource para diseñadores y desarrolladores
+- Es un framework multiplataforma, Android, iOS, Web y Flutter
+- Un objetivo es desarrollar productos de calidad en corto tiempo
+- Un desarrollador sin grandes conocimientos en diseño podría implementar MD
+- La sección Design: System, Foundation, Guidelines
+- fonts.google.com sitio complementario para las fuentes
+- Material Palette generator para implementar la paleta de colores que tendrá mi app
+- Tools: Gallery para compartir diseños con mi equipo, Icons, Color Tool, Material Theme Editor es un plugin para Sketch
