@@ -168,3 +168,24 @@
 - En Web se instala un módulo node a través de npm
 - En Flutter viene incluído por defecto
 - En iOS se incluye en CocoPods
+
+## Code beautiful UI with Flutter and Material Design
+
+- Flutter es la forma de desarrollar aplicaciones nativas para Android y iOS
+- Se caracteriza por la forma rápida de iterar
+- Soporta Material Design de forma nativa
+- Shrine es una app retail de ejemplo
+- El gran problema de las apps con MD v1 es que se parecen mucho una de otra
+- MD 2 es mucho más expresivo ya que es más customizable
+- MD 2 esta mejorado ya que contiene nuevos componentes y estilos
+- MD 2 facilita el desarrollo ya que proporciona herramientas y componentes
+- En Flutter todo es un Widget
+- Lo primero que hay que tomar en cuenta para empezar a desarrollar mi app es: Font, logo, shape, layout y Color
+- copyWith() es un método que se usa mucho en los Widgets de Flutter, permite copiar una nueva instancia pero asignarle valores distintos a los parámetros
+- Todos los Widgets tiene un método build()
+- Backdrop es esencialmente una pila, tiene un front panel y un back panel
+- AnimationController es una clase open source encargada de administrar todas las animaciones
+- En esta demo se utiliza Android Studio con el plugin de Flutter instalado
+- Gesture Detectors como onTap, onDrag, onLongPress para detectar gestos que se hacen con los dedos
+- Flutter Inspector nos permite inspeccionar los widgets que componen la interfaz, al parecer sólo está disponible para Android Studio y IntelliJ IDE
+- Las pantallas rojas de error que tiene flutter sólo se mostrarán en la parte que contiene el problema, eso nos permite hacernos una idea de dónde está el problema
