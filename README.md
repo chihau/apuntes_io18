@@ -189,3 +189,31 @@
 - Gesture Detectors como onTap, onDrag, onLongPress para detectar gestos que se hacen con los dedos
 - Flutter Inspector nos permite inspeccionar los widgets que componen la interfaz, al parecer sólo está disponible para Android Studio y IntelliJ IDE
 - Las pantallas rojas de error que tiene flutter sólo se mostrarán en la parte que contiene el problema, eso nos permite hacernos una idea de dónde está el problema
+
+## Build the new, modular Android App Bundle
+
+- El formato es un archivo ZIP
+- Es un formato para publicar, no puede ser instalado directamente en el dispositivo, contiene archivos metadata que nos permitirán archivos APK, es más estricto que el de un APK.
+- Los directorios raíces de un AAB son los módulos de la aplicación
+- resources.pb es el equivalente al resources.arc que se puede encontrar en la mayoría de los APK, que describe los recursos presentes en tu app y su objetivo, la extensión .pb es del formato protocol buffer que permite convertir en formato binario antes de generar el APK
+- assets.pb y native.pb son los equivalentes a los assets y native libraries
+- File targeting: Los archivos correctos para los usuarios/dispositvos correctos, es el principal concepto de Google Play Dynamic Delivery.
+- Permite reducir el tamaño de tus APK
+- Ahora soporta Assets Targeting
+- Ej: assets/strings#lang_fr/dictionary.pb que contiene texto para dispositivos en frances
+- Google Play servirá sólo lo necesario en el APK por ejemplo para un Samsung Galaxy J5 en Inglés -> xhdpi, arm, en
+- Esto funcionará desde Lollipop en adelante
+- Los APK serán 20% más pequeños, es decir te vas a ahorrar un 20% de descarga cada vez que la app tenga que actualizarse
+- Se puede probar en AS 3.2 Canary
+- La herramienta generará un archivo llamado bundle.aab (No un APK) firmado y listo para publicar, luego Google Play genera los APK automáticamente
+- Para publicar en Google Play hay que subir nuestra Release Key para firmar los APK generados
+- Bundle Explorer me permite verificar los APK que se van a generar, cuanto se va a ahorrar en espacio, a los dispositivos que va a llegar, etc.
+- Publishing API soporta AAB
+- Para testear mi app puedo instalar un APK generado con AAB directamente desde AS
+- También podemos utilizar canales alpha y beta, además de un track interno de 100 testers máximo
+- bundletool para probar los APK generados de forma local desde la línea de comandos directamente a los dispositivos conectados
+- bundletool es la misma herramienta que utiliza AS para generar un archivo .aab, es open source github.com/google/bundletool
+- Para reducir más espacio aún se puede modularizar la app, quitando las funcionalidades que menos se utilizan utilizando Dynamic Module
+- Se tiene que declarar en el AndroidManifest.xml y en el build.gradle
+- Play Core Library para comunicarse con Google Play Service para descargar el Dynamic Module utilizando IPC
+- Para descargar módulos muy grandes, el usuario tendrá que aceptar un aviso
