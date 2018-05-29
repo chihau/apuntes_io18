@@ -217,3 +217,14 @@
 - Se tiene que declarar en el AndroidManifest.xml y en el build.gradle
 - Play Core Library para comunicarse con Google Play Service para descargar el Dynamic Module utilizando IPC
 - Para descargar módulos muy grandes, el usuario tendrá que aceptar un aviso
+
+## Product design: How to Build Better Products with Android Things
+
+- SOM o System On Modulo está pensando para el prototipado, este incluso se puede colocar en un PCB personalizado
+- Carrier Board es un accesorio, es donde se puede montar el SOM, contiene ethernet, power, headphone jack. Es una herramienta para prototipar ya que podemos hacer todas las conexiones
+- Existe una Android Things app para facilitar las pruebas con el Kit
+- Cuando creas un producto tienes que hacerte preguntas como ¿Necesitaré desarrollar una app? ¿Cómo lo hago para soportar accesibilidad? ¿Cómo lo hago para que sea actualizable el SW?
+- En HW no tenemos el botón Undo, mientras más lejos hemos avanzado es más caro retroceder
+- Proyecto interesante https://github.com/nordprojects/lantern
+- Processing for Android es una nueva herramienta para correr aplicaciones para Android escritas en processing
+- App Library para administrar los productos desde la consola web de Android Things, se puede administrar por ejemplo los canales de testing con distintas versiones del software que serán distribuidas de forma inalámbrica
