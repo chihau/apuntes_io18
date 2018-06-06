@@ -228,3 +228,90 @@
 - Proyecto interesante https://github.com/nordprojects/lantern
 - Processing for Android es una nueva herramienta para correr aplicaciones para Android escritas en processing
 - App Library para administrar los productos desde la consola web de Android Things, se puede administrar por ejemplo los canales de testing con distintas versiones del software que serán distribuidas de forma inalámbrica
+
+## An introduction to developing Actions for the Google Assistant
+- Grandes cambios en computación ocurren cada 10 años
+- 1977 Mainframe, 1987 Desktop, 1997 Internet, 2007 Mobile, 2017 Assistants
+- La computadoras se vuelven más ubicuas y eso puede provocar confusión en lo que tratamos de hacer
+- Con los asistentes podemos hacer las cosas a través de una gran cantidad de servicios y dispositivos que están a nuestra disposición, expresando de forma natural lo que queremos
+- Google Assistant es una alternativa en esta era de asistentes digitales y computación conversacional
+- Pronto podremos pedir un café en el Starbucks más cercano y luego ir a retirarlo
+- Actions on Google es la nueva plataforma para desarrollar aplicaciones para el Google Assistant
+- Si ya tienes desarrollada una app móvil o web y te estás preguntando qué es lo que viene, lo que viene es hacerla compatible con Assistant. No se trata de reescribir la app por completo sino que enfocarse en las tareas comunes y cotidianas
+- AoG es la plataforma para entregar IA a nuestras aplicaciones, y proporcionar a las app:
+	- Mayor audiencia: 1M+ de Acciones, 500M+ dispositivos, 25+ países
+	- Monetización: Nos ayudará con la identificación, Pagos, Recibos y Helpers
+	- Re-enganche y fidelidad: Nos permite volver a reenganchar a los usuarios de nuestra app ya que permite el uso de esta en distintos dispositivos, contextos, lugares y horarios
+- Son programas verticales
+- Content Actions: noticias, recetas y podcast
+- App Actions, podemos agregar un botón a nuestra app android para gatilllar alguna acción
+- Conversational Actions: es una de las cosas más potentes, nos permite interactuar con una app como si fuera una conversación
+- Multimodal conversations: combina la conversación con contenido visual como por ejemplo gráficos
+- Escala a través de distintos dispositivos: Voice only (Google home), Voice forward (Auto), Intermodal (celular, tablet) y Visual only (reloj)
+- Tenemos disponibles plantillas para comenzar a crear nuestra app
+- Podemos utilizar spreadsheets para el contenido de la app
+
+### Acciones Conversacionales Personalizadas
+- ¿Cómo funciona?
+
+	1) El usuario se pronuncia
+
+	2) El asistente hace un request a la API de conversación
+
+	3) La API de conversación responde
+
+	4) El asistente responde
+
+- Cuando desarrollamos una app de este tipo hay que considerar:
+
+	1) Diseño: ¿Qué diría o haría esta persona?
+
+	- Adjetivos: impaciente, hablador, geek
+	- Personaje: Ingeniero, Bibliotecario, Amante de los video juegos
+	- Descripción: Un programa bibliotecario digital que ha sido migrado desde una arquitectura legacy de los años 70
+	- Elegir una voz
+
+	2) Herramientas:
+
+	- Actions on Google Console
+	- GCP, Firebase
+	- DialogFlow es una herramienta para el entendimiento del lenguaje natural, se posiciones entre el asistente y mi servidor, es un “Hybrid Machine Learning powered Intent Matching and entity recognition”
+	- Los usuarios invocan la app diciendo “Hey Google, talk to NOMBRE DE LA APP”, AoG hace un proceso mágico (Speech to text, NLP, ML Ranking, Action Invocation), se gatilla un “Welcome Intent” y el asistente responde con un mensaje como “Sure, here’s NOMBRE DE LA APP”.
+	- Dialogflow Intents: El usuario podría eventualmente pedir muchas cosas distintas, por lo que esto nos permite entrenar al sistema con muchas frases distintas y las frases que son semánticamente similares se les llama intents
+	- Dialogflow Entities: Son una lista de términos claves, los cuales podemos asignarle sinónimos
+
+	3) Infraestructura
+
+	- Luego el asistente puede responder con un mensaje que también indica lo que puede hacer por el usuario como por ejemplo “Hi there! So tell me, which programming language”, el usuario puede responder “Tell me about Kotlin”, nuevamente pasa por el proceso mágico de AoG (speech to text), busca y encuentra un match con el intent ‘which_language’ desde las frases entrenadas, luego Dialogflow podría gatillar un webhook firebase function que responde con un texto que puede pasarse de texto a voz para luego reproducirlo en el asistente “Kotlin was first announced in…”
+
+	4) Testing
+
+	- Dialogflow posee un simulador web para probar toda la interacción con el usuario
+	- También podemos testear nuestra app desde un teléfono que tenga asociada la misma cuenta de google
+
+### ¿Cómo enriquecer la experiencia?
+- Además de la voz, podemos desplegar respuestas visuales con imágenes, textos y urls, podemos crear listas y carruseles
+- Otra super característica es que podemos pasar la conversación de un dispositivo a otro, por ejemplo podemos estar interactuando con un smart speaker (que no tiene pantalla) y generar un notificación en el teléfono para continuar la conversación desde el teléfono
+- Puedes crear acciones Alpha y Beta antes de publicar la versión a producción
+
+### Ser descubierto en el Assistant Directory
+- El directorio nos permite descubrir nuevas  acciones
+- Está en web y mobile para Android y iOS
+- 30% de las acciones son descubiertas gracias al directorio
+- Nos puede sugerir acciones en base al contexto (hora del día, ubicación)
+- También podemos buscar por popularidad, tendencia, sugeridas, categoría, subcategorías, etc
+- Action Page: es la página de nuestra acción, refleja nuestra marca, posee una foto, una descripción y la forma en que podemos invocar nuestra acción, permite a los usuarios entender qué es lo que hace nuestra app, también muestra los comentarios y evaluaciones de los usuarios
+- Existen intents bases que nos permiten gatillar acciones o sugerirnos algunas aplicaciones que nos pueden ayudar, ej “Hey Google, I want to start a meditation”
+- Action Links: nos permite apretar un botón y gatillar nuestra acción (incluso puede ser desde el navegador del computador al asistente de nuestro teléfono), para implementarlo simplemente se crea un url que luego se inserta donde queramos
+
+
+### Monetizar nuestra experiencia
+
+- Actualmente funciona en 7 países (America del Norte, algunos países de Europa y Australia)
+- Podemos hacer transacciones simples para comprar cosas
+- El flujo es: Hacer la orden, Proponer y confirmar la orden, Enviar actualizaciones, confirmar la dirección de entrega y Linkear con nuestra cuenta
+- También podrás comprar productos digitales pronto en USA, UK, Japón y Canadá
+- Es una oportunidad para monetizar: Juegos, Contenido Premium, Libros, Películas, etc
+- Default Routines, nos permite gatillar multiples acciones en un simple comando
+- Daily updates: se pueden generar notificaciones push a cierta hora del día desde el asistente
+
